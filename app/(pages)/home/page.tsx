@@ -128,6 +128,9 @@ const HomePage = () => {
                         <p>
                             <a href="mailto:verbitsky.vastu@gmail.com">verbitsky.vastu@gmail.com</a>
                         </p>
+                        <p>
+                            <a href="tel:+79771315563">+79771315563</a>
+                        </p>
                     </div>
                 </div>
             </div>
