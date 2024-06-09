@@ -17,7 +17,6 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <body>
-        {/*<NavBar/>*/}
         {children}
       </body>
     </html>
