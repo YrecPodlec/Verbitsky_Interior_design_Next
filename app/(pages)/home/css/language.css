@@ -1,0 +1,180 @@
+.selector_container{
+    width: 100%;
+    display: flex;
+    top: 7vh;
+    justify-content: flex-end;
+    position: fixed;
+    z-index: 105;
+}
+.language_block_select{
+    padding: 10px;
+    background-color: rgba(196, 37, 8, 0.7);
+    margin-right: 2vw;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    font-family: font_fortezza;
+    letter-spacing: 3px;
+    font-size: 15px;
+}
+.languages_box_choose{
+    position: absolute;
+    display: none;
+    width: 26vw;
+    justify-content: space-between;
+    margin-top: 1vh;
+    right: 2vw;
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    padding: 0 15px 15px 15px;
+    font-weight: bold;
+    font-size: 1vw;
+}
+.languages_box_choose.active{
+    display: flex;
+}
+.link_lang{
+    text-decoration: none;
+    color: #000000;
+    display: flex;
+    margin-top: 2vh;
+    transition: all .4s ease-in-out;
+    font-family: font_fortezza;
+}
+.link_lang:hover{
+    background-color: rgba(196, 37, 8, 0.7);
+    cursor: pointer;
+}
+.container_text_flag{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.text_lang{
+    padding: 5px;
+    letter-spacing: 3px;
+}
+.flag_lang{
+    width: 3.3vw;
+    height: 100%;
+    border: 1px rgba(0, 0, 0, 0.2) solid;
+    background-size: cover;
+    background-position: center;
+}
+.eng_flag{
+    background-image: url("../images/flags/usa.png");
+}
+.spanish_flag{
+    background-image: url("../images/flags/spain.png");
+}
+.german_flag{
+    background-image: url("../images/flags/germany.png");
+}
+.french_flag{
+    background-image: url("../images/flags/france.png");
+}
+.ukr_flag{
+    background-image: url("../images/flags/ukraine.png");
+}
+.chez_flag{
+    background-image: url("../images/flags/czech.png");
+}
+.hindi_flag{
+    background-image: url("../images/flags/india.png");
+}
+.china_flag{
+    background-image: url("../images/flags/china.png");
+}
+.japan_flag{
+    background-image: url("../images/flags/japan.png");
+}
+.korea_flag{
+    background-image: url("../images/flags/korea.png");
+}
+.arab_flag{
+    background-image: url("../images/flags/arab.png");
+}
+.isr_flag{
+    background-image: url("../images/flags/israel.png");
+}
+.portuges_flag{
+    background-image: url("../images/flags/portugal.png");
+}
+.bengal_flag{
+    background-image: url("../images/flags/bangladesh.png");
+}
+.turk_flag{
+    background-image: url("../images/flags/turkey.png");
+}
+.vietnam_flag{
+    background-image: url("../images/flags/vjetnam.png");
+}
+.ital_flag{
+    background-image: url("../images/flags/italy.png");
+}
+.poland_flag{
+    background-image: url("../images/flags/poland.png");
+}
+.roman_flag{
+    background-image: url("../images/flags/romania.png");
+}
+.thai_flag{
+    background-image: url("../images/flags/thailand.png");
+}
+.norveg_flag{
+    background-image: url("../images/flags/norway.png");
+}
+.rus_flag{
+    background-image: url("../images/flags/russia.png");
+}
+/*FOR MOBILE PHONES*/
+@media screen and (max-width: 770px) and (max-height: 1080px){
+    .languages_box_choose{
+        width: 96vw;
+        left: 2vw;
+        right: 0;
+        padding: 0 0 10px 0;
+        justify-content: center;
+        overflow-x: auto;
+    }
+    .link_lang{
+        font-size: 3.5vw;
+    }
+    .flag_lang{
+        width: 12vw;
+    }
+    .language_block_select{
+        padding: 8px;
+        background-color: rgba(196, 37, 8, 0.7);
+        margin-right: 2vw;
+        margin-top: 2vh;
+        border-radius: 25px;
+        color: white;
+        cursor: pointer;
+        font-family: font_fortezza;
+        letter-spacing: 3px;
+        font-size: 12px;
+    }
+}
+/*FOR TABS*/
+@media screen and (min-width: 700px) and (max-width: 1100px) and (max-height: 1400px){
+    .languages_box_choose{
+        width: 43vw;
+        font-size: 2vw;
+    }
+    .flag_lang{
+        width: 5vw;
+    }
+}
+@media screen and (width: 768px) and (height: 1024px){
+    .languages_box_choose{
+        width: 96vw;
+        right: 0;
+        left: 2vw;
+        font-size: 2vw;
+        justify-content: space-around;
+    }
+    .flag_lang{
+        width: 12vw;
+    }
+}

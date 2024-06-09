@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import React from "react";
 import '@/app/shared/fonts/fonts.css'
-import {NavBar} from "@/app/widgets";
 
 
 export const metadata: Metadata = {
@@ -18,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <body>
-        <NavBar/>
+        {/*<NavBar/>*/}
         {children}
       </body>
     </html>
