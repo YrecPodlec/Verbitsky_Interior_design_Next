@@ -16,6 +16,7 @@ export const metadata: Metadata = {
       "    landscape design, vastu design, vastu, VASTU, васту, дизайн по васту, васту архитектура, архитектура, verbitsky-vastu, verbitsky vastu, салютогенный," +
       "в, городе, Москва, Москве, в Москве, москва, москве, в москва, в городе москва, дизайн проект, нахимовский, проспект, индивидуальный, комплектация," +
       "поставщики, скидка, ремонт, ремонт помещения",
+    icons: "/favicon.ico",
 };
 import { SpeedInsights } from "@vercel/speed-insights/next"
 export default function RootLayout({
@@ -24,11 +25,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ru">
-    <SpeedInsights/>
+      <html lang="ru">
+      <SpeedInsights/>
       <body>
-        {children}
+      {children}
       </body>
-    </html>
+      </html>
   );
 }
