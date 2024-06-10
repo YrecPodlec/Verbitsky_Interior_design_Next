@@ -18,7 +18,8 @@ const GalleryBlockFeach_bones = forwardRef<HTMLDivElement, GalleryBlockFeachProp
     const [active, setActive] = useState(false);
 
     const getDataProject = (data: Project) => {
-        setSelectedItem(data);
+        setSelectedItem(null);  // Сначала сбросим текущий проект
+        setTimeout(() => setSelectedItem(data), 0);  // Установим новый проект
     };
 
     return (

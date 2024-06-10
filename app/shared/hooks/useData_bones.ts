@@ -1,4 +1,4 @@
-import {useEffect, useState} from "react";
+import { useEffect, useState } from "react";
 
 export const useData_bones = (url: string) => {
     const [data, setData] = useState<any>(null);
@@ -8,6 +8,7 @@ export const useData_bones = (url: string) => {
 
     useEffect(() => {
         const fetchData = async () => {
+            setLoading(true);
             try {
                 const response = await fetch(url);
                 if (!response.ok) {
@@ -20,10 +21,11 @@ export const useData_bones = (url: string) => {
                 // @ts-ignore
                 setError(error.message);
             } finally {
-                setTimeout(() => setLoading(false), 500)
+                setLoading(false);
             }
         };
         fetchData();
     }, [url]);
+
     return { data, loading, error, DataLength };
-}
+};
