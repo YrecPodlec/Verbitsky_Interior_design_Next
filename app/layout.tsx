@@ -3,7 +3,6 @@ import "./globals.css";
 import React from "react";
 import '@/app/shared/fonts/fonts.css'
 
-
 export const metadata: Metadata = {
   title: "Verbitsky | Дизайн интерьера",
   description: "Verbitsky - Студия дизайна интерьеров, которая предоставляет Вам возможность получить услуги по проектированию Дизайна ВАШЕГО личного пространства. " +
@@ -17,14 +16,6 @@ export const metadata: Metadata = {
       "    landscape design, vastu design, vastu, VASTU, васту, дизайн по васту, васту архитектура, архитектура, verbitsky-vastu, verbitsky vastu, салютогенный," +
       "в, городе, Москва, Москве, в Москве, москва, москве, в москва, в городе москва, дизайн проект, нахимовский, проспект, индивидуальный, комплектация," +
       "поставщики, скидка, ремонт, ремонт помещения",
-  icons: {
-    icon: [
-      {
-        url: '/icons/up_logo.png',
-        href: '/icons/up_logo.png',
-      },
-    ],
-  }
 };
 import { SpeedInsights } from "@vercel/speed-insights/next"
 export default function RootLayout({
