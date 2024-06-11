@@ -39,7 +39,7 @@ export default function RootLayout({
   return (
       <html lang="ru">
       <Head>
-          <link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="651x835"/>
+          <link rel="icon" type="image/x-icon" href="/static/favicon.ico" sizes="651x835"/>
       </Head>
       <SpeedInsights/>
       <body>
