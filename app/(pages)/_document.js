@@ -1,16 +1,7 @@
-import Document, {
-    Html,
-    Head,
-    Main,
-    NextScript,
-    DocumentContext,
-    DocumentInitialProps,
-} from 'next/document'
+import Document, { Html, Head, Main, NextScript } from 'next/document'
 
 class MyDocument extends Document {
-    static async getInitialProps(
-        ctx: DocumentContext
-    ): Promise<DocumentInitialProps> {
+    static async getInitialProps(ctx) {
         const originalRenderPage = ctx.renderPage
 
         // Run the React rendering logic synchronously
@@ -31,11 +22,9 @@ class MyDocument extends Document {
     render() {
         return (
             <Html lang="en">
-                <Head>
-                    <link rel="shortcut icon" href="@/app/static/favicon.ico" sizes="651x835"/>
-                </Head>
+                <Head />
                 <body>
-                <Main/>
+                <Main />
                 <NextScript />
                 </body>
             </Html>
