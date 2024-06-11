@@ -16,7 +16,7 @@ export const metadata: Metadata = {
       "    landscape design, vastu design, vastu, VASTU, васту, дизайн по васту, васту архитектура, архитектура, verbitsky-vastu, verbitsky vastu, салютогенный," +
       "в, городе, Москва, Москве, в Москве, москва, москве, в москва, в городе москва, дизайн проект, нахимовский, проспект, индивидуальный, комплектация," +
       "поставщики, скидка, ремонт, ремонт помещения",
-    icons: "/favicon.ico",
+    icons: "/up_logo.png",
 };
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import Head from "next/head";
@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
       <html lang="ru">
           <Head>
-              <link rel="icon" href="/favicon.ico" />
+              <link rel="icon" href="/up_logo.png" />
           </Head>
           <SpeedInsights/>
           <body>

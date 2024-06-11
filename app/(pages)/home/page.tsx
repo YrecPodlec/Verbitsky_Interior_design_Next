@@ -36,7 +36,7 @@ const HomePage = () => {
                         {/*// <!--                </div>-->*/}
                         <div className="slidebar_icon">
                             <i className="bi bi-telephone"></i>
-                            <p className="phone_call"><a href="tel:+79500612752">+79500612752</a></p>
+                            <p className="phone_call"><a href="tel:+79771315563">+79771315563</a></p>
                         </div>
                         <div className="slidebar_icon">
                             <i className="bi bi-envelope"></i>
@@ -100,8 +100,8 @@ const HomePage = () => {
                                 className="fab fa-vk"></i>
                                 <div className="text_link_social">VK</div>
                             </a>
-                            <a className="links_social" href="tel:+79500612752"><i className="bi bi-telephone-fill"></i>
-                                <div className="text_link_social">+79500612752</div>
+                            <a className="links_social" href="tel:+79771315563"><i className="bi bi-telephone-fill"></i>
+                                <div className="text_link_social">+79771315563</div>
                             </a>
                             <a className="links_social" href="mailto:verbitskiyirina@gmail.com"><i
                                 className="bi bi-envelope-fill"></i>
@@ -264,7 +264,7 @@ const HomePage = () => {
                                 <div className="container_phone_contacts item_contacts">
                                     <div className="item_phone_contact">
                                         <i className="bi bi-telephone-fill"></i><a
-                                        href="tel:+79500612752">+79500612752</a>
+                                        href="tel:+79771315563">+79771315563</a>
                                     </div>
                                     <div className="item_phone_contact">
                                         <i className="bi bi-envelope-fill"></i><a
