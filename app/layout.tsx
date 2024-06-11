@@ -19,11 +19,11 @@ export const metadata: Metadata = {
     icons: {
         icon: [
             {
-                url: '/favicon.ico',
+                url: '/static/icon.ico',
                 media: '(prefers-color-scheme: light)',
             },
             {
-                url: '/favicon.ico',
+                url: '/static/icon.ico',
                 media: '(prefers-color-scheme: dark)',
             },
         ],
@@ -39,7 +39,7 @@ export default function RootLayout({
   return (
       <html lang="ru">
       <Head>
-          <link rel="icon" type="image/x-icon" href="/static/favicon.ico" sizes="651x835"/>
+          <link rel="shortcut icon" type="image/x-icon" href="/static/icon.ico" sizes="651x835"/>
       </Head>
       <SpeedInsights/>
       <body>
