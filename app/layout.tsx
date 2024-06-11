@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     icons: "/favicon.ico",
 };
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import Head from "next/head";
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -26,10 +27,13 @@ export default function RootLayout({
 }>) {
   return (
       <html lang="ru">
-      <SpeedInsights/>
-      <body>
-      {children}
-      </body>
+          <Head>
+              <link rel="icon" href="/favicon.ico" />
+          </Head>
+          <SpeedInsights/>
+          <body>
+              {children}
+          </body>
       </html>
   );
 }
