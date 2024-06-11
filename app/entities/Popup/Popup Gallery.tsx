@@ -20,7 +20,7 @@ const PopupGallery_bones: React.FC<PropsPopUp> = ({ ProjectSelected, active, set
                 onClick={event => event.stopPropagation()}
                 className={`relative w-3/4 bg-white p-4 text-black rounded-2xl m-16 transform transition-transform duration-300 ${active ? 'scale-100' : 'scale-50'}`}
             >
-                <div className="flex justify-end" onClick={() => setActive(false)}>
+                <div className="flex justify-end mr-4" onClick={() => setActive(false)}>
                     <ButtonClose />
                 </div>
                 {ProjectSelected ? (
