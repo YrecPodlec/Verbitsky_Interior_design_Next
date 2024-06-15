@@ -4,10 +4,13 @@ import React from "react";
 import '@/app/shared/fonts/fonts.css'
 
 export const metadata: Metadata = {
-  title: "Verbitsky | Дизайн интерьера",
-  description: "Verbitsky - Студия дизайна интерьеров, которая предоставляет Вам возможность получить услуги по проектированию Дизайна ВАШЕГО личного пространства. " +
+    other: {
+        'yandex-verification': '47a47e6d1de44eb7'
+    },
+    title: "Verbitsky | Дизайн интерьера",
+    description: "Verbitsky - Студия дизайна интерьеров, которая предоставляет Вам возможность получить услуги по проектированию Дизайна ВАШЕГО личного пространства. " +
       "Мы предоставляем услуги Терапевтического дизайна, Васту дизайна, Салютогенного Дизайна",
-  keywords: "verbitsky, studio, verbitsky studio, design, дизайн интерьера, иркутск, interior design, order interior design,\n" +
+    keywords: "verbitsky, studio, verbitsky studio, design, дизайн интерьера, иркутск, interior design, order interior design,\n" +
       "    заказать дизайн интерьера, дизайн студия, design studio, ирина вербицкая, ирина, вербицкая, вербитская, заказать, дизайн, интерьера, интерьер,\n" +
       "    дизайн 2022, designer, спальни, дизайнер, стили интерьера, красиво, красивый интерьер, дизайн кухни, дизайн комнаты, дизайн квартиры, дизайн цветов\n" +
       "    ландшафтный дизайн, mehndi design 2022, interior design trends 2022, trends, 2022, 2021, 2020, decoração pop it,\n" +
@@ -40,7 +43,6 @@ export default function RootLayout({
       <html lang="ru">
       <Head>
           <link rel="shortcut icon" type="image/x-icon" href="/static/icon.ico" sizes="651x835"/>
-          <meta name="yandex-verification" content="47a47e6d1de44eb7"/>
       </Head>
       <SpeedInsights/>
       <body>
