@@ -40,6 +40,7 @@ export default function RootLayout({
       <html lang="ru">
       <Head>
           <link rel="shortcut icon" type="image/x-icon" href="/static/icon.ico" sizes="651x835"/>
+          <meta name="yandex-verification" content="47a47e6d1de44eb7"/>
       </Head>
       <SpeedInsights/>
       <body>
