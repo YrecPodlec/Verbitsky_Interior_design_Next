@@ -19,18 +19,6 @@ export const metadata: Metadata = {
       "    landscape design, vastu design, vastu, VASTU, васту, дизайн по васту, васту архитектура, архитектура, verbitsky-vastu, verbitsky vastu, салютогенный," +
       "в, городе, Москва, Москве, в Москве, москва, москве, в москва, в городе москва, дизайн проект, нахимовский, проспект, индивидуальный, комплектация," +
       "поставщики, скидка, ремонт, ремонт помещения",
-    icons: {
-        icon: [
-            {
-                url: '/static/icon.ico',
-                media: '(prefers-color-scheme: light)',
-            },
-            {
-                url: '/static/icon.ico',
-                media: '(prefers-color-scheme: dark)',
-            },
-        ],
-    },
 };
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import Head from "next/head";
