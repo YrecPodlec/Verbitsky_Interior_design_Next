@@ -11,7 +11,7 @@ const GalleryBlock_bones = forwardRef<HTMLDivElement, PropsPopUp & GalleryBlockP
         <div className={'flex flex-wrap gap-4 justify-between'} ref={ref}>
             {
                 GalleryData?.results.map((project) => (
-                    <div key={project._id} className={'relative w-[28vw] h-[370px] cursor-pointer'}>
+                    <div key={project._id} className={'relative w-[28vw] h-[370px] cursor-pointer screen_1280:w-[42vw] screen_960:w-[46%] screen_960:h-[125px]'}>
                         <div className="relative w-full h-full">
                             <GalleryImage ImageURL={project.images[1]} ImageAlt={project.title} />
                             <div className="absolute inset-0

@@ -23,14 +23,14 @@ const GalleryBlockFeach_bones = forwardRef<HTMLDivElement, GalleryBlockFeachProp
     };
 
     return (
-        <motion.div initial="hidden" animate={"visible"} className={'min-h-[804px]'} ref={ref}>
+        <motion.div initial="hidden" animate={"visible"} ref={ref} className={'h-[756px] screen_1280:h-[1142px] screen_960:h-[407px]'}>
             <PopupGallery
                 ProjectSelected={selectedItem}
                 active={active}
                 setActive={setActive}
             />
             {loading ? (
-                <motion.div variants={AnimationLoading} custom={0.5}>
+                <motion.div variants={AnimationLoading} custom={0}>
                     <Loading />
                 </motion.div>
             ) : error ? (
