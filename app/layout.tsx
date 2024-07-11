@@ -20,8 +20,8 @@ export const metadata: Metadata = {
       "в, городе, Москва, Москве, в Москве, москва, москве, в москва, в городе москва, дизайн проект, нахимовский, проспект, индивидуальный, комплектация," +
       "поставщики, скидка, ремонт, ремонт помещения",
 };
+
 import { SpeedInsights } from "@vercel/speed-insights/next"
-import Head from "next/head";
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -29,9 +29,6 @@ export default function RootLayout({
 }>) {
   return (
       <html lang="ru">
-      <Head>
-          <link rel="shortcut icon" type="image/x-icon" href="/static/icon.ico" sizes="651x835"/>
-      </Head>
       <SpeedInsights/>
       <body>
       {children}
