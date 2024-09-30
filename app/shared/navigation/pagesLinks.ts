@@ -1,33 +1,28 @@
 const PagesLinks_bones = [
     {
-        id: 'home',
-        href: '/',
-        text: 'Home',
-    },
-    {
         id: 'gallery',
         href: '/gallery',
-        text: 'Галерея',
+        text: "gallery",
     },
     {
         id: 'services',
         href: '/services',
-        text: 'Услуги',
+        text: 'services',
     },
     {
         id: 'articles',
         href: '/articles',
-        text: 'Статьи',
+        text: 'articles',
     },
     {
         id: 'contacts',
         href: '/contacts',
-        text: 'Контакты',
+        text: 'contacts',
     },
     {
         id: "test",
         href: '/test',
-        text: 'Test',
+        text: 'test',
     }
 ]
 

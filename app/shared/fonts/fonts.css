@@ -1,7 +1,0 @@
-@font-face {
-    font-family: verbitsky;
-    src: url("FRACTAL.otf") format('OpenType');
-}
-*{
-    font-family: verbitsky, serif;
-}

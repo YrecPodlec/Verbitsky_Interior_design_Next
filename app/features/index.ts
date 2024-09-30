@@ -1,11 +1,8 @@
-// Навигационная панель с текстом и навигацией
-import NavigationBar_bones from "@/app/features/navigation/NavigationBar";
-export {NavigationBar_bones as NavigationBar}
+import Pagination_bones from "@/app/features/Pagonation/Pagination";
+export {Pagination_bones as Pagination}
 
-//Блоки самой галереи
-import {MotionGalleryBlockFeach_bones} from "@/app/features/Gallery/GalleryBlockFeach";
-export {MotionGalleryBlockFeach_bones as GalleryBlockFeach}
+import DynamicMainBlock_bones from "@/app/features/DynamicMainBlock/DynamicMainBlock";
+export {DynamicMainBlock_bones as DynamicMainBlock}
 
-//Pagination Bar
-import PaginationBar_bones from "@/app/features/Pagination/PaginationBar";
-export {PaginationBar_bones as PaginationBar}
+import DynamicNavBar_bones from "@/app/features/DynamicNavBar/DynamicNavBar";
+export {DynamicNavBar_bones as DynamicNavBar}

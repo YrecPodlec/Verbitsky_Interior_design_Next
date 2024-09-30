@@ -1,7 +1,12 @@
-// импорт навбара, готового
-import NavBar_Bones from "@/app/widgets/NavBar/NavBar_Bones";
-export {NavBar_Bones as NavBar}
-
-// готовая секция с галереей
-import GallerySection_bones from "@/app/widgets/Gallery/GallerySection";
-export {GallerySection_bones as GallerySection}
+import MainScreen_bones from "@/app/widgets/MainScreen/MainScreen";
+export {MainScreen_bones as MainScreen}
+import MainScreenMobile_bones from "@/app/widgets/MainScreen/MainScreen_Mobile";
+export {MainScreenMobile_bones as MainScreenMobile}
+import Advantages_bones from "@/app/widgets/advantages/advantages";
+export {Advantages_bones as Advantages}
+import Prices_bones from "@/app/widgets/Prices/Prices";
+export {Prices_bones as Prices}
+import Benefit_bones from "@/app/widgets/BenefitMain/Benefit";
+export {Benefit_bones as Benefit}
+import Products_bones from "@/app/widgets/Products/Products";
+export {Products_bones as Products}
