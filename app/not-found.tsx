@@ -5,7 +5,7 @@ import {NavBarBtn} from "@/app/shared";
 export default function NotFound() {
     const t = useTranslations("NotFound")
     console.log(t('TextMain'))
-    let locale = 'en'
+    let locale = 'ru'
     return (
         <RootLayout params={{ locale }}>
             <div
