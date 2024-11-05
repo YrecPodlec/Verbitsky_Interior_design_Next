@@ -27,8 +27,6 @@ yarn-error.log*
 
 # local env files
 .env*.local
-app/env.ts
-.env
 
 # vercel
 .vercel
@@ -36,7 +34,3 @@ app/env.ts
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-
-.idea
-напоминалка_1.png
-напоминалка_2.png

@@ -1,10 +1,18 @@
+/** @type {import('next').NextConfig} */
 
-import createNextIntlPlugin from 'next-intl/plugin';
-const withNextIntl = createNextIntlPlugin('./i18n.ts');
+import createNextIntlPlugin from "next-intl/plugin";
+const withNextIntl = createNextIntlPlugin();
 
 const nextConfig = {
-    env: {
-        NEXT_PUBLIC_PROJECTS: process.env.NEXT_PUBLIC_PROJECTS,
+    images: {
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: 'verbitsky-design-server.vercel.app',
+                port: '',
+                pathname: '/images/**',
+            },
+        ],
     },
 };
 
