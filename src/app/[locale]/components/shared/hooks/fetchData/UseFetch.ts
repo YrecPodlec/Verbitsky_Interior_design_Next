@@ -19,7 +19,7 @@ export const useFetchData = <T>(url: string) => {
             }
         };
 
-        getData();
+        getData().then(r => r);
     }, [url]);
 
     return { data, loading, error };
