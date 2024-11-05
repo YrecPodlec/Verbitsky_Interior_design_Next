@@ -2,7 +2,6 @@
 import React from 'react';
 import { Loading, PriceCard } from "@/app/[locale]/components/shared";
 import { useFetchData } from "@/app/[locale]/components/shared/hooks/fetchData/UseFetch";
-import { useLocale } from "use-intl";
 import { useTranslations } from "next-intl";
 import { PriceCardData } from "@/app/[locale]/components/shared/interface/interface";
 export const dynamic = 'force-dynamic';

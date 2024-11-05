@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import {Gallery, Pagination} from "@/app/[locale]/components/features";
 import { useFetchData } from "@/app/[locale]/components/shared/hooks/fetchData/UseFetch";
-import { useLocale } from "use-intl";
 import { Loading } from "@/app/[locale]/components/shared";
 
 export interface GalleryProjects {
