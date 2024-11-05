@@ -11,13 +11,11 @@ export interface GalleryProjects {
     images: string[];
     description: string;
 }
-export const dynamic = 'force-dynamic';
 
 const Gallery_Projects = () => {
     const [page, setPage] = useState(1);
     const limit = 6;
-    const locale = useLocale();
-    const url = `https://verbitsky-design-server.vercel.app/projects?page=${page}&limit=${limit}&lang=${locale}`;
+    const url = `https://verbitsky-design-server.vercel.app/projects?page=${page}&limit=${limit}&lang=en}`;
     const { data, loading, error } = useFetchData<{ total: number, results: GalleryProjects[] }>(url);
 
     if (error) {

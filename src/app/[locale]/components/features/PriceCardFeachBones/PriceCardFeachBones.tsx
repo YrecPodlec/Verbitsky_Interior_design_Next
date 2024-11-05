@@ -8,8 +8,7 @@ import { PriceCardData } from "@/app/[locale]/components/shared/interface/interf
 export const dynamic = 'force-dynamic';
 
 const PriceCardFetchBones = () => {
-    const locale = useLocale();
-    const url = `https://verbitsky-design-server.vercel.app/price?lang=${locale}`;
+    const url = `https://verbitsky-design-server.vercel.app/price?lang=en}`;
     const { data, loading, error } = useFetchData<PriceCardData[]>(url);  // Изменено: <PriceCardData[]> указывает, что ожидается массив объектов
     const tCard = useTranslations('priceCard');
 
