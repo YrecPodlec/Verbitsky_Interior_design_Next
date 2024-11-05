@@ -5,6 +5,7 @@ import { useFetchData } from "@/app/[locale]/components/shared/hooks/fetchData/U
 import { useLocale } from "use-intl";
 import { useTranslations } from "next-intl";
 import { PriceCardData } from "@/app/[locale]/components/shared/interface/interface";
+export const dynamic = 'force-dynamic';
 
 const PriceCardFetchBones = () => {
     const locale = useLocale();

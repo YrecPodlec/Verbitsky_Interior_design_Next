@@ -11,6 +11,7 @@ export interface GalleryProjects {
     images: string[];
     description: string;
 }
+export const dynamic = 'force-dynamic';
 
 const Gallery_Projects = () => {
     const [page, setPage] = useState(1);
