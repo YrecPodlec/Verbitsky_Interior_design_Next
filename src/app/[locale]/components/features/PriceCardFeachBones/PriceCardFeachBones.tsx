@@ -12,9 +12,10 @@ interface PriceCardFetchBonesProps {
 }
 
 const PriceCardFetchBones: React.FC<PriceCardFetchBonesProps> = ({ locale }) => {
-    const url = `https://verbitsky-design-server.vercel.app/price?lang=${locale}`;
+    const url = `https://verbitsky-design-server.vercel.app/price?lang=en`;
     const { data, loading, error } = useFetchData<PriceCardData[]>(url);
     const tCard = useTranslations('priceCard');
+    console.log(locale, " :LOCALE")
 
     if (loading) {
         return (
