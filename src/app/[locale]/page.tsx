@@ -1,4 +1,4 @@
-import Page from "@/app/[locale]/(pages)/home/page";
+import Page from "@/app/[locale]/components/pages/home/page";
 
 export default function Home() {
   return (
