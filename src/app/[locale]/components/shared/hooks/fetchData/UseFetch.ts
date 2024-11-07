@@ -1,26 +1,16 @@
-"use client"
-import { useEffect, useState } from 'react';
-import { fetchData } from '@/app/[locale]/components/shared/hooks/fetchData/fetchData';
+export const getServerStaticProps = async (page: number, limit: number, lang: string) => {
+    const url = `https://verbitsky-design-server.vercel.app/projects?page=${page}&limit=${limit}&lang=${lang}`;
 
-export const useFetchData = <T>(url: string) => {
-    const [data, setData] = useState<T | null>(null); // Изменено с T[] на T | null
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState<string | null>(null);
+    try {
+        const response = await fetch(url);
+        const data = await response.json();
 
-    useEffect(() => {
-        const getData = async () => {
-            try {
-                const result = await fetchData(url);
-                setData(result); // Устанавливаем результат запроса в data
-            } catch (err) {
-                setError(`Не удалось загрузить данные. ${err}`);
-            } finally {
-                setLoading(false);
-            }
+        return {
+            total: data.total || 0,
+            results: data.results || []
         };
-
-        getData().then(r => r);
-    }, [url]);
-
-    return { data, loading, error };
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    } catch (error) {
+        throw new Error("Ошибка загрузки данных");
+    }
 };

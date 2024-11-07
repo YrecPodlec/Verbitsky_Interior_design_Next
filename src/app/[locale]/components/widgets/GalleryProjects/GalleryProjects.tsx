@@ -1,8 +1,8 @@
 "use client"
-import React, { useState } from 'react';
-import {Gallery, Pagination} from "@/app/[locale]/components/features";
-import { useFetchData } from "@/app/[locale]/components/shared/hooks/fetchData/UseFetch";
+import React, { useState, useEffect } from 'react';
+import { Gallery, Pagination } from "@/app/[locale]/components/features";
 import { Loading } from "@/app/[locale]/components/shared";
+import {getServerStaticProps} from "@/app/[locale]/components/shared/hooks/fetchData/UseFetch";
 
 export interface GalleryProjects {
     _id: string;
@@ -13,27 +13,41 @@ export interface GalleryProjects {
 
 const Gallery_Projects = () => {
     const [page, setPage] = useState(1);
+    const [projects, setProjects] = useState<GalleryProjects[]>([]);
+    const [totalPages, setTotalPages] = useState(0);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState<string | null>(null);
+
     const limit = 6;
-    const url = `https://verbitsky-design-server.vercel.app/projects?page=${page}&limit=${limit}&lang=en`;
-    const { data, loading, error } = useFetchData<{ total: number, results: GalleryProjects[] }>(url);
+    const lang = 'en';
+
+    useEffect(() => {
+        const fetchData = async () => {
+            setLoading(true);
+            setError(null);
+
+            try {
+                const data = await getServerStaticProps(page, limit, lang);
+                setProjects(data.results);
+                setTotalPages(Math.ceil(data.total / limit));
+                // eslint-disable-next-line @typescript-eslint/no-unused-vars
+            } catch (error) {
+                setError("Ошибка загрузки данных");
+            } finally {
+                setLoading(false);
+            }
+        };
+
+        fetchData().then(r => r);
+    }, [page]);
+
     if (error) {
-        return (
-            <div>
-                Ошибка загрузки данных
-            </div>
-        );
+        return <div>{error}</div>;
     }
 
     if (loading) {
-        return (
-            <div>
-                <Loading />
-            </div>
-        );
+        return <div><Loading /></div>;
     }
-
-    const projects = data?.results || [];
-    const totalPages = Math.ceil((data?.total || 0) / limit);
 
     return (
         <section>

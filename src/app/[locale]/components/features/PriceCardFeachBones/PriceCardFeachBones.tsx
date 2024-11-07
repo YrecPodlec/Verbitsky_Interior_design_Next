@@ -1,22 +1,39 @@
 "use client";
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Loading, PriceCard } from "@/app/[locale]/components/shared";
-import { useFetchData } from "@/app/[locale]/components/shared/hooks/fetchData/UseFetch";
 import { useTranslations } from "next-intl";
 import { PriceCardData } from "@/app/[locale]/components/shared/interface/interface";
-
+import {getPriceCardData} from "@/app/[locale]/components/shared/hooks/fetchData/FetchPrice";
 
 const PriceCardFetchBones = () => {
-    const url = `https://verbitsky-design-server.vercel.app/price?lang=en`;
-    const { data, loading, error } = useFetchData<PriceCardData[]>(url);
+    const [data, setData] = useState<PriceCardData[] | null>(null);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState<string | null>(null);
+
+    const lang = 'en';  // Или можно передать через пропс/контекст
     const tCard = useTranslations('priceCard');
 
+    useEffect(() => {
+        const fetchData = async () => {
+            setLoading(true);
+            setError(null);
+
+            try {
+                const fetchedData = await getPriceCardData(lang);
+                setData(fetchedData);
+                // eslint-disable-next-line @typescript-eslint/no-unused-vars
+            } catch (err) {
+                setError("Ошибка загрузки данных");
+            } finally {
+                setLoading(false);
+            }
+        };
+
+        fetchData().then(r => r);
+    }, [lang]);
+
     if (loading) {
-        return (
-            <div>
-                <Loading />
-            </div>
-        );
+        return <div><Loading /></div>;
     }
 
     if (error) {
