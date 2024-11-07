@@ -37,7 +37,7 @@ export default async function RootLayout({ children, params: { locale } }: Props
               <body className={'font-primary tracking-widest'}>
                   <NavBar/>
                   <main className={'pt-12 mx-32 xs:mx-16 xxxs:mx-4'}>
-                      {React.cloneElement(children as React.ReactElement, { locale })}
+                      {children}
                       <Link href={'/'} locale="en">EN</Link>
                       <Link href={'/'} locale="ru">ru</Link>
                       <Background/>

@@ -2,18 +2,10 @@
 
 import Page from "@/app/[locale]/components/pages/home/page";
 
-interface PageProps {
-    params: {
-        locale: string;
-    };
-}
-
-export default function Home({ params }: PageProps): JSX.Element {
-    const { locale } = params;
-
+export default function Home(): JSX.Element {
     return (
         <>
-            <Page locale={locale} />
+            <Page />
         </>
     );
 }

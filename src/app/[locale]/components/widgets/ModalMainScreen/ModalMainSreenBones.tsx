@@ -4,11 +4,7 @@ import {ModalComponent} from "@/app/[locale]/components/features";
 import {useTranslations} from "next-intl";
 import {Advantages, Benefit, PriceProducts, WorkSteps} from "@/app/[locale]/components/widgets";
 
-interface PriceProductsBonesProps {
-    locale: string;
-}
-
-const ModalMainScreenBones = ({locale}:PriceProductsBonesProps) => {
+const ModalMainScreenBones = () => {
     const t = useTranslations('ModalWindows')
     const images = useTranslations('images')
     const data = [
@@ -16,7 +12,7 @@ const ModalMainScreenBones = ({locale}:PriceProductsBonesProps) => {
         {
             childrenBtn: <ImageRel ImageObject={'https://verbitsky-design-server.vercel.app/images/miami/3.webp'}
                                           text={""} alt={images('image_miami')}/>,
-            children: <PriceProducts locale={locale}/>,
+            children: <PriceProducts />,
             title: 'ModalIcon_1'
         },
         // ЭТАПЫ РАБОТЫ

@@ -4,11 +4,7 @@ import { PageBtn, Title } from "@/app/[locale]/components/shared";
 import { useTranslations } from "next-intl";
 import { PriceCardFeach } from "@/app/[locale]/components/features";
 
-interface PriceProductsBonesProps {
-    locale: string;
-}
-
-const PriceProductsBones = ({ locale }: PriceProductsBonesProps) => {
+const PriceProductsBones = () => {
     const t = useTranslations('ModalWindows');
     const tb = useTranslations('buttons');
     const image = useTranslations('images');
@@ -69,7 +65,7 @@ const PriceProductsBones = ({ locale }: PriceProductsBonesProps) => {
                 </article>
             </section>
             <section id={"services"}>
-                <PriceCardFeach locale={locale} />
+                <PriceCardFeach />
             </section>
             <section id={"contacts"}>
                 CONTACTS

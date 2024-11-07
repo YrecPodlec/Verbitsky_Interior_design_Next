@@ -1,18 +1,14 @@
 import React from 'react';
 import {GalleryProjects, MainScreen, ModalMainScreen} from "@/app/[locale]/components/widgets";
 
-interface PageComponentProps {
-    locale: string;
-}
-
-const Page = ({locale}: PageComponentProps) => {
+const Page = () => {
 
     return (
         <section className={'mt-12 flex flex-col gap-8'}>
             <MainScreen/>
-            <ModalMainScreen locale={locale}/>
+            <ModalMainScreen/>
             {/*блок с проектами*/}
-            <GalleryProjects locale={locale}/>
+            <GalleryProjects/>
         </section>
     );
 };

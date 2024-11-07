@@ -5,17 +5,11 @@ import { useFetchData } from "@/app/[locale]/components/shared/hooks/fetchData/U
 import { useTranslations } from "next-intl";
 import { PriceCardData } from "@/app/[locale]/components/shared/interface/interface";
 
-export const dynamic = 'force-dynamic';
 
-interface PriceCardFetchBonesProps {
-    locale: string;
-}
-
-const PriceCardFetchBones: React.FC<PriceCardFetchBonesProps> = ({ locale }) => {
+const PriceCardFetchBones = () => {
     const url = `https://verbitsky-design-server.vercel.app/price?lang=en`;
     const { data, loading, error } = useFetchData<PriceCardData[]>(url);
     const tCard = useTranslations('priceCard');
-    console.log(locale, " :LOCALE")
 
     if (loading) {
         return (
