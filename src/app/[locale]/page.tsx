@@ -1,11 +1,10 @@
-// app/[locale]/components/pages/home/page.tsx
+import HomePage from "@/app/[locale]/components/pages/home/homePage";
 
-import Page from "@/app/[locale]/components/pages/home/page";
 
 export default function Home(): JSX.Element {
     return (
         <>
-            <Page />
+            <HomePage />
         </>
     );
 }

@@ -1,38 +1,23 @@
-"use client";
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Loading, PriceCard } from "@/app/[locale]/components/shared";
-import { useTranslations } from "next-intl";
-import { PriceCardData } from "@/app/[locale]/components/shared/interface/interface";
-import {getPriceCardData} from "@/app/[locale]/components/shared/hooks/fetchData/FetchPrice";
+import {useTranslations} from "next-intl";
+interface PriceCardData {
+    category: string;
+    price: number;
+    title: string;
+    services: string[];
+    tags: string[];
+}
 
-const PriceCardFetchBones = () => {
-    const [data, setData] = useState<PriceCardData[] | null>(null);
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState<string | null>(null);
+interface PriceCardFetchBonesProps {
+    data?: PriceCardData[];
+    error?: string | null;
+}
 
-    const lang = 'en';  // Или можно передать через пропс/контекст
-    const tCard = useTranslations('priceCard');
 
-    useEffect(() => {
-        const fetchData = async () => {
-            setLoading(true);
-            setError(null);
-
-            try {
-                const fetchedData = await getPriceCardData(lang);
-                setData(fetchedData);
-                // eslint-disable-next-line @typescript-eslint/no-unused-vars
-            } catch (err) {
-                setError("Ошибка загрузки данных");
-            } finally {
-                setLoading(false);
-            }
-        };
-
-        fetchData().then(r => r);
-    }, [lang]);
-
-    if (loading) {
+const PriceCardFetchBones: React.FC<PriceCardFetchBonesProps> = ({ data, error }) => {
+    const tCard = useTranslations('priceCard')
+    if (!data && !error) {
         return <div><Loading /></div>;
     }
 
