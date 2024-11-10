@@ -1,9 +1,10 @@
 "use client";
 
-import React, {useEffect, useState} from 'react';
-import {useLocale} from "next-intl";
-import {Loading} from "@/app/[locale]/components/shared";
-import {Gallery, Pagination} from "@/app/[locale]/components/features";
+import React, { useEffect, useState } from 'react';
+import { useLocale } from "next-intl";
+import { Loading } from "@/app/[locale]/components/shared";
+import { Gallery, Pagination } from "@/app/[locale]/components/features";
+import { fetchData } from "@/app/[locale]/components/shared/hooks/fetchData/UseFetch";
 
 export interface GalleryProjects {
     _id: string;
@@ -26,18 +27,18 @@ const Gallery_Projects = () => {
             setError(null);
 
             try {
-                const res = await fetch(`https://verbitsky-design-server.vercel.app/projects?page=${page}&limit=6&lang=${locale}`);
-                const data = await res.json();
+                // Используем fetchData для запроса данных с параметрами
+                const data = await fetchData<{ results: GalleryProjects[]; total: number }>(
+                    'projects',
+                    locale,
+                    { page, limit: 6 }
+                );
 
-                if (res.ok) {
-                    if (Array.isArray(data.results)) {
-                        setProjects(data.results);
-                    } else {
-                        setError("Invalid data format");
-                    }
+                if (data) {
+                    setProjects(data.results);
                     setTotalPages(Math.ceil(data.total / 6));
                 } else {
-                    setError(data.message || 'Error fetching projects');
+                    setError("Invalid data format");
                 }
                 // eslint-disable-next-line @typescript-eslint/no-unused-vars
             } catch (error) {
@@ -76,7 +77,9 @@ const Gallery_Projects = () => {
                         <p>No projects found</p>
                     )}
                 </div>
-                <Pagination page={page} totalPages={totalPages} setPage={setPage} />
+                <div className={'w-full flex justify-center mt-4'}>
+                    <Pagination page={page} totalPages={totalPages} setPage={setPage} />
+                </div>
             </div>
         </section>
     );

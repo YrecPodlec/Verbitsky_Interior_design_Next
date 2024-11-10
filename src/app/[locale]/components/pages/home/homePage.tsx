@@ -4,11 +4,10 @@ import {GalleryProjects, MainScreen, ModalMainScreen} from "@/app/[locale]/compo
 const HomePage = () => {
 
     return (
-        <section className={'mt-12 flex flex-col gap-8'}>
+        <section className={'mt-12 flex flex-col gap-32'}>
             <MainScreen/>
             <ModalMainScreen/>
-            {/*блок с проектами*/}
-            <GalleryProjects/>
+            <GalleryProjects />
         </section>
     );
 };

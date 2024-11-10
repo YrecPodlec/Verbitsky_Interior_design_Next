@@ -77,5 +77,8 @@
     "costBy": "Cost per M",
     "callMe": "Contact",
     "listPrice": "List of services:"
+  },
+  "fetch": {
+    "noData": "Failed to upload data :(\nModeration may be underway, but try to reload the page"
   }
 }

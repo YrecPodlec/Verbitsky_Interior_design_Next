@@ -1,4 +1,5 @@
 import React from "react";
+import {PaginationBtn} from "@/app/[locale]/components/shared";
 
 interface PaginationBonesProps {
     page: number;
@@ -6,7 +7,7 @@ interface PaginationBonesProps {
     setPage: (page: number) => void;
 }
 
-const Pagination_bones: React.FC<PaginationBonesProps> = ({ page, totalPages, setPage }) => {
+const PaginationBones: React.FC<PaginationBonesProps> = ({ page, totalPages, setPage }) => {
     const handleNext = () => {
         if (page < totalPages) {
             setPage(page + 1);
@@ -18,28 +19,32 @@ const Pagination_bones: React.FC<PaginationBonesProps> = ({ page, totalPages, se
             setPage(page - 1);
         }
     };
+    const numbers = Array.from({ length: totalPages }, (_, i) => i + 1);
 
     return (
-        <nav className="flex items-center space-x-4">
-            <button
+        <nav className="flex items-center space-x-12">
+            <PaginationBtn
+                page={page}
+                total={totalPages}
                 onClick={handlePrevious}
                 disabled={page === 1}
-                className={page === 1 ? "text-gray-400" : "text-blue-600"}
-            >
-                {"<"}
-            </button>
-            <span className="text-lg font-semibold">
-                {page} / {totalPages}
+            />
+            <span className="flex gap-4">
+                {
+                    numbers.map((number) =>
+                        <div key={number} className={`py-2 px-4 cursor-default ${page === number ? "bg-OrangePeach text-white" : "bg-white"} text-back rounded-full`}>{number}</div>)
+                }
             </span>
-            <button
-                onClick={handleNext}
-                disabled={page === totalPages}
-                className={page === totalPages ? "text-gray-400" : "text-blue-600"}
-            >
-                {">"}
-            </button>
+            <div className={'rotate-180'}>
+                <PaginationBtn
+                    page={page}
+                    total={totalPages}
+                    onClick={handleNext}
+                    disabled={page === totalPages}
+                />
+            </div>
         </nav>
     );
 };
 
-export default Pagination_bones;
+export default PaginationBones;

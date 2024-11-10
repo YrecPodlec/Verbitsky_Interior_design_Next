@@ -15,6 +15,7 @@ import SecondTitleBones from "@/app/[locale]/components/shared/ui/title/SecondTi
 import ImageRelBones from "@/app/[locale]/components/shared/ui/image/ImageRel";
 import NavBarBtnBones from "@/app/[locale]/components/shared/ui/button/navbar/NavBarBtn_Bones";
 import LoadingBones from "@/app/[locale]/components/shared/ui/loading/loadingBones";
+import PaginationBtnBones from "@/app/[locale]/components/shared/ui/button/paginationBtn/paginationBtnBones";
 
 export {NavBarLogoBones as NavBarLogo};
 export {NavBarBtnBones as NavBarBtn}
@@ -33,3 +34,4 @@ export {PageBtnRowBones as PageBtnRow}
 export {SecondTitleBones as SecondTitle}
 export {ImageRelBones as ImageRel}
 export {LoadingBones as Loading}
+export {PaginationBtnBones as PaginationBtn}

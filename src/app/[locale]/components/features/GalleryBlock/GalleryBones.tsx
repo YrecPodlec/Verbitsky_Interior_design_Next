@@ -1,7 +1,7 @@
 import React from "react";
-import {GalleryProjects} from "@/app/[locale]/components/widgets/GalleryProjects/GalleryProjects";
 import {ModalComponent} from "@/app/[locale]/components/features";
 import {ImageRel} from "@/app/[locale]/components/shared";
+import {GalleryProjects} from "@/app/[locale]/components/widgets/GalleryProjects/GalleryProjects";
 const Gallery_bones:React.FC<GalleryProjects> = ({images, title, description}) => {
 
     return (
