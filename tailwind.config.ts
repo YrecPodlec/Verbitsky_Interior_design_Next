@@ -83,6 +83,9 @@ const config: Config = {
       boxShadow:{
         shadow_Navbar: '400px 0 0 0 rgba(0, 0, 0, 0.7);',
         shadow_none: '1px 0 0 0 rgba(0, 0, 0, 0.1);',
+      },
+      gridTemplateColumns: {
+        'auto': 'repeat(auto-fill, minmax(192, 192))',
       }
     },
   },

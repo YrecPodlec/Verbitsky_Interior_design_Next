@@ -2,7 +2,6 @@ import React from 'react';
 
 interface PaginationBtnBonesProps {
     page: number;
-    total: number;
     onClick?: () => void;
     disabled?: boolean;
 }
