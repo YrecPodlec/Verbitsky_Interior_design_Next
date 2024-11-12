@@ -17,6 +17,7 @@ import NavBarBtnBones from "@/app/[locale]/components/shared/ui/button/navbar/Na
 import LoadingBones from "@/app/[locale]/components/shared/ui/loading/loadingBones";
 import PaginationBtnBones from "@/app/[locale]/components/shared/ui/button/paginationBtn/paginationBtnBones";
 import HoverTextProjectsBones from "@/app/[locale]/components/shared/ui/HoverText/HoverText";
+import HoverFirstBtnBones from "@/app/[locale]/components/shared/ui/HoverText/HoverFirstBtnsBones";
 
 export {NavBarLogoBones as NavBarLogo};
 export {NavBarBtnBones as NavBarBtn}
@@ -37,3 +38,4 @@ export {ImageRelBones as ImageRel}
 export {LoadingBones as Loading}
 export {PaginationBtnBones as PaginationBtn}
 export {HoverTextProjectsBones as HoverTextProjects}
+export {HoverFirstBtnBones as HoverFirstBtn}

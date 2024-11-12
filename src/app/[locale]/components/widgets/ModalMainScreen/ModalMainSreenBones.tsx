@@ -1,5 +1,5 @@
 import React from 'react';
-import {ImageRel} from "@/app/[locale]/components/shared";
+import {HoverFirstBtn, ImageRel} from "@/app/[locale]/components/shared";
 import {ModalComponent} from "@/app/[locale]/components/features";
 import {useTranslations} from "next-intl";
 import {Advantages, Benefit, PriceProducts, WorkSteps} from "@/app/[locale]/components/widgets";
@@ -43,7 +43,7 @@ const ModalMainScreenBones = () => {
                         childrenBtn={
                         item.childrenBtn
                         }
-                        Title={t(item.title)}>
+                        hover={<HoverFirstBtn Title={t(item.title)}/>}>
                         {item.children}
                     </ModalComponent>
                 )
