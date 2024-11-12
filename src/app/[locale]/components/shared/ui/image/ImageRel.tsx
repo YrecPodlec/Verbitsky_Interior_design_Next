@@ -7,10 +7,18 @@ interface Props {
     alt: string;
 }
 
-const ImageRelBones: React.FC<Props> = ({ImageObject, text, alt}) => {
+const ImageRelBones: React.FC<Props> = ({ ImageObject, text, alt }) => {
     return (
         <div className={'relative w-full h-full'}>
-            <Image src={ImageObject} alt={alt} fill style={{objectFit: "cover"}} className={'z-40'}/>
+            <Image
+                src={ImageObject}
+                alt={alt}
+                fill={true}
+                style={{ objectFit: "cover" }}
+                className={'z-40'}
+                priority
+                sizes="(max-width: 768px) 100vw, 50vw"  // Указываем размеры для разных разрешений
+            />
             <div className={'z-50 relative'}>{text}</div>
         </div>
     );

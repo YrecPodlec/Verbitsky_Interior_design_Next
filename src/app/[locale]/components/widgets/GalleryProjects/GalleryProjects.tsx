@@ -17,23 +17,36 @@ const Gallery_Projects = () => {
     const locale = useLocale();
     const [page, setPage] = useState(1);
     const { data, isLoading, isError } = useProject(page, locale);
-
+    console.log(data)
+    console.log(isError)
+    console.log(isLoading)
     if (isLoading) {
         return <div><Loading /></div>;
     }
 
     if (isError) {
-        return <div>{isError}</div>;
+        return <p>An error occurred</p>;
     }
 
-    const { total, results } = data;
-    const totalPagesL = Math.ceil(total / 6);
+    // Проверяем, что data существует и имеет нужную структуру
+    if (!data || !data.results || !Array.isArray(data.results)) {
+        return <p>No projects available</p>;
+    }
+    const totalPagesL = Math.ceil(data.total / 6);
 
     return (
-        <section>
+        <section className={'grid gap-8'}>
+            <div className={'border-b-4 text-center'}>
+                <h1 className={'responsive-64 font-secondaryf'}>
+                    ОЗНАКОМЬТЕСЬ С ГАЛЕРЕЕЙ ПРОЕКТОВ
+                </h1>
+                <p className={'responsive-32'}>
+                    Самые лучшие проекты собраны здесь в общей подборке
+                </p>
+            </div>
             <div>
                 <div className="grid grid-cols-4 gap-8">
-                    {results.map((project: GalleryProjects) => (
+                    {data.results.map((project: GalleryProjects) => (
                         <Gallery
                             key={project._id}
                             _id={project._id}
