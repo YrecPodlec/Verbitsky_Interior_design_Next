@@ -48,7 +48,6 @@ const ModalMainScreenBones = () => {
                     </ModalComponent>
                 )
             }
-
         </section>
     );
 };
