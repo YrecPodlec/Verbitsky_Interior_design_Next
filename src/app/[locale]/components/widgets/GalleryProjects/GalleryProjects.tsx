@@ -45,7 +45,7 @@ const Gallery_Projects = () => {
                 </p>
             </div>
             <div>
-                <div className="grid grid-cols-4 gap-8">
+                <div className="grid grid-cols-4 xs:grid-cols-3 gap-8">
                     {data.results.map((project: GalleryProjects) => (
                         <Gallery
                             key={project._id}

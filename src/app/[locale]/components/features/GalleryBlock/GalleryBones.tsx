@@ -1,6 +1,6 @@
 import React from "react";
 import {ModalComponent} from "@/app/[locale]/components/features";
-import {ImageRel} from "@/app/[locale]/components/shared";
+import {HoverTextProjects, ImageRel} from "@/app/[locale]/components/shared";
 import {GalleryProjects} from "@/app/[locale]/components/widgets/GalleryProjects/GalleryProjects";
 const Gallery_bones:React.FC<GalleryProjects> = ({images, title, description}) => {
 
@@ -8,7 +8,7 @@ const Gallery_bones:React.FC<GalleryProjects> = ({images, title, description}) =
         <div>
             <ModalComponent childrenBtn={
                 <ImageRel ImageObject={images[0]} alt={description} text={''}/>
-            } Title={title}>
+            } hover={<HoverTextProjects  Title={title} />}>
                 <div className={'grid grid-cols-4 gap-8'}>
                     {
                         images.map((value, index) =>

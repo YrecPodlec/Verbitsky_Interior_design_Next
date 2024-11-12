@@ -5,10 +5,10 @@ import {ModalBtn, ModalWindow} from "@/app/[locale]/components/shared";
 interface Props {
     children: React.ReactNode;
     childrenBtn: React.ReactNode;
-    Title: string;
+    hover: React.ReactNode;
 }
 
-const ModalComponentBones: React.FC<Props> = ({ children, childrenBtn, Title }) => {
+const ModalComponentBones: React.FC<Props> = ({ children, childrenBtn, hover }) => {
     const [active, setActive] = useState(false);
     // Блокируем/разблокируем скролл страницы
     useEffect(() => {
@@ -24,7 +24,7 @@ const ModalComponentBones: React.FC<Props> = ({ children, childrenBtn, Title }) 
     }, [active]);
     return (
         <>
-            <ModalBtn setActive={setActive} childrenBtn={childrenBtn} Title={Title}/>
+            <ModalBtn setActive={setActive} childrenBtn={childrenBtn} hover={hover}/>
             <ModalWindow active={active} setActive={setActive}>
                 {children}
             </ModalWindow>
