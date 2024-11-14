@@ -5,6 +5,8 @@ import WorkStepsBones from "@/app/[locale]/components/widgets/WorkSteps/WorkStep
 import BenefitBones from "@/app/[locale]/components/widgets/Benefit/Benefit";
 import AdvantagesBones from "@/app/[locale]/components/widgets/Advanteges/AdvantegesBones";
 import Gallery_Projects from "@/app/[locale]/components/widgets/GalleryProjects/GalleryProjects";
+import ContactsBones from "@/app/[locale]/components/widgets/contacts/contactsBones";
+
 export {MainScreen_bones as MainScreen}
 export {PriceProductsBones as PriceProducts}
 export {ModalMainScreenBones as ModalMainScreen}
@@ -12,3 +14,4 @@ export {WorkStepsBones as WorkSteps}
 export {BenefitBones as Benefit}
 export {AdvantagesBones as Advantages}
 export {Gallery_Projects as GalleryProjects}
+export {ContactsBones as Contacts}

@@ -17,9 +17,6 @@ const Gallery_Projects = () => {
     const locale = useLocale();
     const [page, setPage] = useState(1);
     const { data, isLoading, isError } = useProject(page, locale);
-    console.log(data)
-    console.log(isError)
-    console.log(isLoading)
     if (isLoading) {
         return <div><Loading /></div>;
     }
@@ -45,7 +42,7 @@ const Gallery_Projects = () => {
                 </p>
             </div>
             <div>
-                <div className="grid grid-cols-4 xs:grid-cols-3 gap-8">
+                <div className="grid grid-cols-4 xs:grid-cols-3 xxs:grid-cols-2 gap-8">
                     {data.results.map((project: GalleryProjects) => (
                         <Gallery
                             key={project._id}

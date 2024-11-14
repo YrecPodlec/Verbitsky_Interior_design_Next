@@ -36,7 +36,7 @@ const PaginationBones: React.FC<PaginationBonesProps> = ({ page, totalPages, set
                 {ArrayPages.map((number) => (
                     <div
                         key={number}
-                        className={`py-2 px-4 cursor-pointer ${page === number ? "bg-OrangePeach text-white" : "bg-white text-back"} rounded-full`}
+                        className={`py-2 px-4 cursor-pointer ${page === number ? "bg-OrangePeach text-white" : "bg-white text-back hover:bg-green hover:text-white"} rounded-full`}
                         onClick={() => setPage(number)}
                     >
                         {number}

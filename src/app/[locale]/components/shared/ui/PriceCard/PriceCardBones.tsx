@@ -41,7 +41,7 @@ const PriceCardBones: React.FC<PriceCardMaket> = ({title, services, price}) => {
                     services.map((value, index) =>
                         <li key={index} className={'mt-2 flex'}>
                             <p
-                                className={`${index % 2 !== 1 ? 'bg-white text-back' : 'bg-GreenLight bg-opacity-80'} p-4 bg-opacity-80 w-full`}
+                                className={`${index % 2 !== 1 ? 'bg-white text-back' : 'bg-GreenLight bg-opacity-80'} p-4 bg-opacity-80 w-full responsive-24`}
                             >
                                 {value}
                             </p>

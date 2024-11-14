@@ -3,6 +3,7 @@ import { ImageRel } from "@/app/[locale]/components/shared";
 import { PageBtn, Title } from "@/app/[locale]/components/shared";
 import { useTranslations } from "next-intl";
 import { PriceCardFeach } from "@/app/[locale]/components/features";
+import {Contacts} from "@/app/[locale]/components/widgets";
 
 const PriceProductsBones = () => {
     const t = useTranslations('ModalWindows');
@@ -68,7 +69,7 @@ const PriceProductsBones = () => {
                 <PriceCardFeach />
             </section>
             <section id={"contacts"}>
-                CONTACTS
+                <Contacts/>
             </section>
         </section>
     );

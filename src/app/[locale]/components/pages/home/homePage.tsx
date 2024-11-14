@@ -1,13 +1,14 @@
 import React from 'react';
-import {GalleryProjects, MainScreen, ModalMainScreen} from "@/app/[locale]/components/widgets";
+import {Contacts, GalleryProjects, MainScreen, ModalMainScreen} from "@/app/[locale]/components/widgets";
 
 const HomePage = () => {
 
     return (
-        <section className={'mt-12 flex flex-col gap-32'}>
+        <section className={'mt-12 flex flex-col gap-32 xxs:gap-16'}>
             <MainScreen/>
             <ModalMainScreen/>
             <GalleryProjects />
+            <Contacts/>
         </section>
     );
 };

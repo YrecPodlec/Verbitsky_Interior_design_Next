@@ -6,6 +6,7 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  plugins: [],
   theme: {
     extend: {
       letterSpacing: {
@@ -56,7 +57,7 @@ const config: Config = {
         128: "128px",
         160: "160px",
         256: "256px",
-        512: "512px",
+        512: "512px"
       },
       padding: {
         screen320: '320px',
@@ -80,15 +81,22 @@ const config: Config = {
         'main': '32px',
         'mobile': '12px'
       },
-      boxShadow:{
+      boxShadow: {
         shadow_Navbar: '400px 0 0 0 rgba(0, 0, 0, 0.7);',
         shadow_none: '1px 0 0 0 rgba(0, 0, 0, 0.1);',
       },
       gridTemplateColumns: {
-        'auto': 'repeat(auto-fill, minmax(192, 192))',
-      }
+        'auto': 'repeat(auto-fill, minmax(250px, 1fr))',
+        'masonry': 'repeat(auto-fill, minmax(200px, 1fr))'
+      },
+      gridAutoRows: {
+        'auto-row': '10px'
+      },
+      gridRowEnd: {
+        'end30': "span 30"
+      },
+
     },
   },
-  plugins: [],
 };
 export default config;
