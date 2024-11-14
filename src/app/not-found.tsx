@@ -1,7 +1,11 @@
 export default function NotFound(){
     return(
-        <section className={'bg-black w-full h-full'}>
-            asds
-        </section>
+        <html>
+            <body >
+                <section className={'bg-black w-full h-full'}>
+                    TESTTSTSTST
+                </section>
+            </body>
+        </html>
     );
 };
