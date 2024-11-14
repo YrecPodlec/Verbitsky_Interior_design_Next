@@ -31,18 +31,17 @@ const PriceCardBones: React.FC<PriceCardMaket> = ({title, services, price}) => {
                 <PageBtn href={'#contacts'} text={tCard('callMe')}/>
             </div>
         </div>
-        <div className={'flex-col flex bg-GreenLight bg-opacity-25 p-2'}>
+        <div className={'flex-col flex bg-GreenLight bg-opacity-15 p-2'}>
             <p className={'py-2 responsive-32 cursor-pointer'} onClick={() => setActive(prevState => !prevState)}>
-                {tCard('listPrice')}
+                {tCard('listPrice')}&#9660;
             </p>
             <ul
                 className={`trans gap-1 responsive-24 transition-all duration-300 relative flex-col flex border-t-2 list-disc overflow-hidden ${active ? 'scale-100 max-h-fit' : 'scale-0 max-h-0'}`}>
                 {
                     services.map((value, index) =>
                         <li key={index} className={'mt-2 flex'}>
-                            <p>*</p>
                             <p
-                                // className={`${index % 2 !== 1 ? 'bg-white text-back' : 'bg-GreenLight bg-opacity-80'} p-4 bg-opacity-80`}
+                                className={`${index % 2 !== 1 ? 'bg-white text-back' : 'bg-GreenLight bg-opacity-80'} p-4 bg-opacity-80 w-full`}
                             >
                                 {value}
                             </p>

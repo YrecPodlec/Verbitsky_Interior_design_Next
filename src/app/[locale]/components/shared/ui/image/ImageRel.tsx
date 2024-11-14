@@ -16,8 +16,7 @@ const ImageRelBones: React.FC<Props> = ({ ImageObject, text, alt }) => {
                 fill={true}
                 style={{ objectFit: "cover" }}
                 className={'z-40'}
-                priority
-                sizes="(max-width: 768px) 100vw, 50vw"  // Указываем размеры для разных разрешений
+                loading="lazy"
             />
             <div className={'z-50 relative'}>{text}</div>
         </div>

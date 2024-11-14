@@ -15,7 +15,7 @@ interface PriceCardData {
 
 const PriceCardFetchBones = () => {
     const locale = useLocale();
-    const { data, isLoading, isError } = usePrice(locale); // указываем тип данных для usePrice
+    const { data, isLoading, isError } = usePrice(locale);
 
     if (isError) {
         return <p>{isError}</p>;
