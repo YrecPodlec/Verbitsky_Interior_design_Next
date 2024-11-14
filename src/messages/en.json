@@ -80,5 +80,8 @@
   },
   "fetch": {
     "noData": "Failed to upload data :(\nModeration may be underway, but try to reload the page"
+  },
+  "Err404": {
+    "title": "Ошибка 404 :/"
   }
 }
