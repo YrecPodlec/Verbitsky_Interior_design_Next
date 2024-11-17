@@ -1,7 +1,13 @@
 {
   "LocaleLayout": {
     "title": "Irina Verbitskaya Studio | Interior Design",
-    "description": "Description"
+    "description": "Description",
+    "meta": {
+      "ogTitle": "Irina Verbitskaya Studio — Design That Heals",
+      "ogDescription": "Creating interiors that help restore harmony and health.",
+      "ogImage": "https://example.com/path/to/image.jpg",
+      "ogAlt": "Example of an interior image"
+    }
   },
   "NavBar": {
     "btn1": "ARTICLES",

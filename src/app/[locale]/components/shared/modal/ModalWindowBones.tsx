@@ -13,7 +13,7 @@ const ModalWindowBones: React.FC<Props> = ({ active, setActive, children }) => {
             onClick={() => { setActive(false) }}>
 
             <div
-                className={`w-[94%] h-[92%] p-4 xxxs:p-1 rounded-[48px] bg-back2 ${active ? "scale-1" : "scale-50"}`}
+                className={`max-w-[94%] h-[92%] p-4 xxxs:p-1 rounded-[48px] bg-back2 ${active ? "scale-1" : "scale-50"}`}
                 onClick={e => e.stopPropagation()}>
                 <header className="flex justify-between px-8">
                     <div className="ml-auto">

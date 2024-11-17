@@ -6,9 +6,10 @@ interface Props {
     children: React.ReactNode;
     childrenBtn: React.ReactNode;
     hover: React.ReactNode;
+    className: string;
 }
 
-const ModalComponentBones: React.FC<Props> = ({ children, childrenBtn, hover }) => {
+const ModalComponentBones: React.FC<Props> = ({ children, childrenBtn, hover, className }) => {
     const [active, setActive] = useState(false);
     // Блокируем/разблокируем скролл страницы
     useEffect(() => {
@@ -19,12 +20,12 @@ const ModalComponentBones: React.FC<Props> = ({ children, childrenBtn, hover }) 
         }
 
         return () => {
-            document.body.style.overflow = ''; // Обязательно восстанавливаем при размонтировании
+            document.body.style.overflow = '';
         };
     }, [active]);
     return (
         <>
-            <ModalBtn setActive={setActive} childrenBtn={childrenBtn} hover={hover}/>
+            <ModalBtn setActive={setActive} childrenBtn={childrenBtn} hover={hover} className={className}/>
             <ModalWindow active={active} setActive={setActive}>
                 {children}
             </ModalWindow>

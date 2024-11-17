@@ -12,7 +12,7 @@ const Gallery_bones: React.FC<GalleryProjects> = ({ images, title, description }
                     <ImageRel ImageObject={images[0]} alt={description} text={''} />
                 }
                 hover={<HoverTextProjects Title={title} />}
-            >
+             className={'z-40 relative cursor-pointer w-full aspect-square rounded-main overflow-hidden group mx-auto my-0 xs:h-64 xxs:h-48'}>
                 <div className="masonry-grid">
                     {images.map((value, index) => (
                         <div key={index} className="row-span-2 mb-4">

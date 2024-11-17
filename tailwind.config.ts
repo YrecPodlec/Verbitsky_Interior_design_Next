@@ -9,9 +9,16 @@ const config: Config = {
   plugins: [],
   theme: {
     extend: {
+      keyframes: {
+        pulse: {
+          '0%': {opacity: '1', scale: "1"},
+          "100%": {opacity: "0", scale: "1.2"}
+  }
+      },
       letterSpacing: {
         widest: '.9em',
-        biggest: '16px'
+        biggest: '16px',
+        ok: '4px'
       },
       fontFamily: {
         primary: 'verbitsky',

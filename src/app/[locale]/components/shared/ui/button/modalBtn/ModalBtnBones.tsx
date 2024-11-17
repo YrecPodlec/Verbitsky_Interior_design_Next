@@ -4,13 +4,14 @@ interface Props {
     setActive: (active: boolean) => void;
     childrenBtn: React.ReactNode;
     hover: React.ReactNode;
+    className: string;
 }
 
-const ModalBtn: React.FC<Props> = ({ setActive, childrenBtn, hover }) => {
+const ModalBtn: React.FC<Props> = ({ setActive, childrenBtn, hover, className }) => {
     return (
         <button
             onClick={() => setActive(true)}
-            className="z-40 relative cursor-pointer w-full aspect-square rounded-main overflow-hidden group mx-auto my-0 xs:h-64 xxs:h-48"
+            className={className}
         >
             {childrenBtn}
             {hover}

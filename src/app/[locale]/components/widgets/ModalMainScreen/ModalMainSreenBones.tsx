@@ -43,7 +43,7 @@ const ModalMainScreenBones = () => {
                         childrenBtn={
                         item.childrenBtn
                         }
-                        hover={<HoverFirstBtn Title={t(item.title)}/>}>
+                        hover={<HoverFirstBtn Title={t(item.title)}/>} className={'z-40 relative cursor-pointer w-full aspect-square rounded-main overflow-hidden group mx-auto my-0 xs:h-64 xxs:h-48'}>
                         {item.children}
                     </ModalComponent>
                 )

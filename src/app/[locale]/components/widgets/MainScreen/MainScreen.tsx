@@ -11,7 +11,7 @@ const MainScreen_bones = () => {
                 <p className={'font-secondary text-right'}>INTERIOR</p>
                 <p className={'font-secondary '}>DESIGN</p>
             </div>
-            <div className={'cursor-default responsive-80 z-50 absolute w-[40vw] xxxxs:w-[90%] xs:w-3/4 top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center flex flex-col justify-center'}>
+            <div className={'cursor-default responsive-80 absolute w-[40vw] xxxxs:w-[90%] xs:w-3/4 top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center flex flex-col justify-center'}>
                 <div className={'border-white border-b-2 xs:w-1/2 mx-auto my-0 xxxs:w-full'}>
                     <div className={'flex gap-4 items-center'}>
                         <p className={'font-secondary'}>
@@ -34,7 +34,7 @@ const MainScreen_bones = () => {
                     <PageBtn href={'#contacts'} text={t('Btn')}/>
                 </div>
             </div>
-            <div className={'flex cursor-default'}>
+            <div className={'flex cursor-default -z-10'}>
                 <MainInterior/>
                 <Verbitsky/>
             </div>
