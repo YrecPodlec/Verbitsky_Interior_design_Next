@@ -24,7 +24,7 @@ const ContactsBones = () => {
                             </div>
                         </address>
                         <div className={'grid grid-cols-2 responsive-64 gap-4 border-b-2 py-16'}>
-                            <a className={'flex gap-4 cursor-pointer'} href={'www.linkedin.com/in/verbitsky-irina'}>
+                            <a className={'flex gap-4 cursor-pointer'} href={'https://www.linkedin.com/in/verbitsky-irina'}>
                                 <div className={'aspect-square'}>
                                     <ImageRel  ImageObject={'/linkedin.svg'} alt={'LINKEDIN'} text={''}/>
                                 </div>
