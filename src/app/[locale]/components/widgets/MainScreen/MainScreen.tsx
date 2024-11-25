@@ -5,6 +5,7 @@ import {AddressText, MainInterior, PageBtn, Verbitsky} from "@/app/[locale]/comp
 
 const MainScreen_bones = () => {
     const t = useTranslations('HomePage')
+    const b = useTranslations('buttons')
     return (
         <section className={'flex flex-col justify-between gap-16 xxxs:gap-4'}>
             <div className={'absolute w-[95vw] h-[85vh] top-0 left-0 my-8 mx-4 text-black responsive-256 flex flex-col justify-between -z-10 opacity-40'}>
@@ -38,12 +39,12 @@ const MainScreen_bones = () => {
                 <MainInterior/>
                 <Verbitsky/>
             </div>
-            <div className={'grid grid-cols-2 xxxs:grid-cols-1 xxxs:gap-2 items-center gap-16 justify-center xxxs:my-4'}>
+            <div className={'grid grid-cols-2 xxxs:grid-cols-1 xxxs:gap-4 items-center gap-16 justify-center xxxs:my-4'}>
                 <div className={'cursor-default mx-auto my-0'}>
                     <AddressText/>
                 </div>
                 <div className={'w-2/4'}>
-                    <PageBtn text={'Портфолио'} href={'#portfolio'}/>
+                    <PageBtn text={b('portfolio')} href={'#portfolio'}/>
                 </div>
             </div>
         </section>

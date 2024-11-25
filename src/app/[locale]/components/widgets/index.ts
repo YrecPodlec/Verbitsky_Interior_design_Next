@@ -8,6 +8,7 @@ import Gallery_Projects from "@/app/[locale]/components/widgets/GalleryProjects/
 import ContactsBones from "@/app/[locale]/components/widgets/contacts/contactsBones";
 import Footer from "@/app/[locale]/components/widgets/footer/footer";
 import LanguageModal from "@/app/[locale]/components/widgets/language/languageModal";
+import Menu from "@/app/[locale]/components/widgets/menu/menu";
 
 export {MainScreen_bones as MainScreen}
 export {PriceProductsBones as PriceProducts}
@@ -19,3 +20,4 @@ export {Gallery_Projects as GalleryProjects}
 export {ContactsBones as Contacts}
 export {Footer as Footer}
 export {LanguageModal as LanguageModal}
+export {Menu as Menu}

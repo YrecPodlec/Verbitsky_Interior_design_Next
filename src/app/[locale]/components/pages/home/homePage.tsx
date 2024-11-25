@@ -8,7 +8,9 @@ const HomePage = () => {
             <MainScreen/>
             <ModalMainScreen/>
             <GalleryProjects />
-            <Contacts/>
+            <div id='#contacts'>
+                <Contacts/>
+            </div>
         </section>
     );
 };

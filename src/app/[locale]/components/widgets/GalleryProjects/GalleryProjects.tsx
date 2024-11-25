@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
-import { useLocale } from "next-intl";
+import {useLocale, useTranslations} from "next-intl";
 import { Loading } from "@/app/[locale]/components/shared";
 import { Gallery, Pagination } from "@/app/[locale]/components/features";
 import { useProject } from "@/app/[locale]/components/shared/hooks/useProjects/useProjects";
@@ -14,6 +14,7 @@ export interface GalleryProjects {
 }
 
 const Gallery_Projects = () => {
+    const t = useTranslations('gallery')
     const locale = useLocale();
     const [page, setPage] = useState(1);
     const { data, isLoading, isError } = useProject(page, locale);
@@ -35,10 +36,10 @@ const Gallery_Projects = () => {
         <section className={'grid gap-8'}>
             <div className={'border-b-4 text-center'}>
                 <h1 className={'responsive-64 font-secondaryf'}>
-                    ОЗНАКОМЬТЕСЬ С ГАЛЕРЕЕЙ ПРОЕКТОВ
+                    {t('title')}
                 </h1>
                 <p className={'responsive-32'}>
-                    Самые лучшие проекты собраны здесь в общей подборке
+                    {t('description')}
                 </p>
             </div>
             <div>

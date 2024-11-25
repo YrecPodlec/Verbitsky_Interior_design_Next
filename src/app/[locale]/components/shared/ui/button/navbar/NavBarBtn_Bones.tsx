@@ -7,7 +7,7 @@ interface NavBarBtn {
 }
 const NavBarBtnBones: React.FC<NavBarBtn> = ({text, href}) => {
     return (
-        <Link href={href} className={'flex items-center hover:bg-OrangeMain rounded-3xl px-2 justify-center text-center text-16'}>
+        <Link href={href} className={'flex items-center hover:bg-OrangeMain rounded-3xl px-2 justify-center text-center responsive-16'}>
             {text}
         </Link>
     );

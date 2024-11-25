@@ -6,7 +6,7 @@ import {useTranslations} from "next-intl";
 const LanguageModal = () => {
     const t = useTranslations('lang')
     return (
-        <div className={'fixed right-16 top-16 z-50 justify-center'}>
+        <div className={'fixed right-16 xs:right-4 top-16 z-50 justify-center'}>
             <ModalComponent childrenBtn={<ChangeLang/>} hover={''} className={''}>
                 <div className={'text-center grid gap-4 px-8'}>
                     <h1 className={'responsive-64 font-secondary'}>{t('change')}</h1>

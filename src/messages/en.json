@@ -1,10 +1,10 @@
 {
   "LocaleLayout": {
     "title": "Irina Verbitskaya Studio | Interior Design",
-    "description": "I create interiors that restore harmony and promote health. Your spaces should inspire, relax, and help you find balance by combining style, comfort, and care for your well-being. My projects are not only aesthetically pleasing but also enhance the quality of life, filling your environment with harmony, comfort, and thoughtful design.",
+    "description": "Creating interiors that restore harmony and promote health. Your spaces should inspire, relax, and help you find balance by combining style, comfort, and care for your well-being. My projects are not only aesthetic but also improve the quality of life, filling spaces with harmony, comfort, and care for your health.",
     "meta": {
-      "ogTitle": "Irina Verbitskaya | Design That Heals",
-      "ogDescription": "I create interiors that restore harmony and promote health. Your spaces should inspire, relax, and help you find balance by combining style, comfort, and care for your well-being. My projects are not only aesthetically pleasing but also enhance the quality of life, filling your environment with harmony, comfort, and thoughtful design.",
+      "ogTitle": "Irina Verbitskaya | Healing Design",
+      "ogDescription": "Creating interiors that restore harmony and promote health. Your spaces should inspire, relax, and help you find balance by combining style, comfort, and care for your well-being. My projects are not only aesthetic but also improve the quality of life, filling spaces with harmony, comfort, and care for your health.",
       "ogImage": "https://verbitsky-design-server.vercel.app/images/icons/openG.jpg",
       "ogAlt": "Image of a hall in a Miami House (Miami Project)"
     }
@@ -21,16 +21,16 @@
     "HEALTH": "THAT HEALS",
     "MEETING": "Schedule a Meeting",
     "BENEFITS": "Your Benefits",
-    "MainTextBlock": "In today's world, I not only create design projects but also serve as a therapist. In my projects, I help clients better understand themselves and their desires, make decisions, and overcome crises.",
+    "MainTextBlock": "In today's world, I not only develop design projects but also act as a therapist. In my projects, I help clients better understand themselves and their desires, make decisions, and overcome crises.",
     "Btn": "Contact Me"
   },
   "NotFound": {
     "TextMain": "The page at this address does not exist or is under moderation. Check the link or simply go to the main page",
-    "ToMain": "To the main page"
+    "ToMain": "To Main Page"
   },
   "AddressText": {
-    "Main": "Moscow, Nakhimovsky Prospekt 25k5",
-    "Online": "I also work remotely with any location in the world"
+    "Main": "Moscow, Nakhimovsky Prospect 25k5",
+    "Online": "Also working remotely with any location worldwide"
   },
   "Verbitsky": {
     "NAME": "Irina Verbitskaya",
@@ -39,7 +39,7 @@
   "ModalWindows": {
     "ForAll": "Click to learn more ->",
 
-    "ModalIcon_1" : "Services / Rates",
+    "ModalIcon_1": "Services / Rates",
     "ModalTitle_1": "Services and Products",
 
     "ModalIcon_2": "Work Stages",
@@ -51,14 +51,14 @@
     "ModalIcon_4": "Your Benefits",
     "ModalTitle_4": "Your Benefits",
 
-    "ServicesTitle": "“Verbitsky” provides a wide range of interior design services",
+    "ServicesTitle": "“Verbitsky” offers a wide range of interior design services",
     "li1": "Eco, salutogenic design",
     "li2": "Therapeutic design",
     "li3": "Design using VASTU techniques",
-    "PriceAndPlan": "Cost and rate plan:",
-    "p1": "Interested in therapeutic design? Want to learn how eco and salutogenic design can transform your space and improve your well-being?",
+    "PriceAndPlan": "Cost and Pricing Plan:",
+    "p1": "Interested in therapeutic design? Want to know how eco- and salutogenic design can transform your space and improve your well-being?",
     "p2": "Follow the link below and discover a world of articles that will answer all your questions and inspire change!",
-    "p3": "Interested in therapeutic design? Want to learn how eco and salutogenic design can transform your space and improve your well-being?",
+    "p3": "Interested in therapeutic design? Want to know how eco- and salutogenic design can transform your space and improve your well-being?",
     "suppliers": "Text",
     "pSuppliers": "Text about suppliers"
   },
@@ -66,28 +66,51 @@
     "services": "RATES",
     "articles": "ARTICLES",
     "suppliers": "SUPPLIERS",
-    "contacts": "CONTACTS"
+    "contacts": "CONTACTS",
+    "portfolio": "PORTFOLIO"
   },
   "images": {
     "image_miami": "House in Miami, 3 floors for a family with a living room and luxurious studios",
-    "image_losAngeles": "Apartments in Los Angeles, luxurious bathroom and living room with TV",
-    "image_dubai": "Apartments in Dubai with a luxurious view, bar, kitchen, and living room",
-    "image_riverPark": "Apartments in River-Park residential complex in Moscow",
+    "image_losAngeles": "Apartments in Los Angeles, a luxurious bathroom, and a living room with a TV",
+    "image_dubai": "Apartments in Dubai with a stunning view, bar, kitchen, and living room",
+    "image_riverPark": "Apartments in River-Park Residential Complex in Moscow",
     "image_magellan": "House on Magellan Street, luxurious apartments with detailed design",
-    "image_miamiStudio": "Luxurious studio in a large house in Miami for a big family, a studio for children's learning and work"
+    "image_miamiStudio": "Luxurious studio in a large house in Miami for a big family, a studio for children's education and work"
   },
   "priceCard": {
-    "msg1": "The data didn't load well :/",
+    "msg1": "Some data failed to load :/",
     "msg2": "Check your internet connection or refresh the page",
     "loading": "Data is loading, please wait",
-    "costBy": "Cost per M",
-    "callMe": "Contact",
-    "listPrice": "List of services:"
+    "costBy": "Cost per Sq.M",
+    "callMe": "Contact Me",
+    "listPrice": "List of Services: "
+  },
+  "contacts": {
+    "media": "Contacts and Social Media",
+    "title": "CONTACTS",
+    "form": "Use the contacts or fill out the form specifying your question"
   },
   "fetch": {
-    "noData": "Failed to upload data :(\nModeration may be underway, but try to reload the page"
+    "noData": "Failed to load data :(\nThe page might be under moderation, but try refreshing it"
   },
   "Err404": {
-    "title": "Ошибка 404 :/"
+    "title": "Error 404 :/"
+  },
+  "moderator": {
+    "title": "The page is under moderation",
+    "p1": "This page will be published soon, it is currently being finalized :)",
+    "p2": "Check it later",
+    "p3": "We apologize"
+  },
+  "lang": {
+    "change": "Select your preferred language:"
+  },
+  "footer": {
+    "contacts": "CONTACTS",
+    "media": "Social Media"
+  },
+  "gallery": {
+    "title": "EXPLORE THE PROJECT GALLERY",
+    "description": "The best projects are collected here in one selection"
   }
 }

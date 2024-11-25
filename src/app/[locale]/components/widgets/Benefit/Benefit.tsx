@@ -22,8 +22,8 @@ const Text = ()=>  {
 const BenefitBones = () => {
     const image = useTranslations('images');
     return (
-        <section className={''}>
-            <ImageRel  ImageObject={'https://verbitsky-design-server.vercel.app/images/river-park/1-river.webp'} alt={image('image_riverPark')} text={<Text/>}/>
+        <section className={'relative w-[90vw] before:absolute before:bg-opacity-50 before:w-full before:h-full before:bg-black before:z-50'}>
+            <ImageRel ImageObject={'https://verbitsky-design-server.vercel.app/images/los-angeles/2-la.webp'} alt={image('image_losAngeles')} text={<Text/>}/>
         </section>
     );
 };
