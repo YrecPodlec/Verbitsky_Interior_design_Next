@@ -1,12 +1,12 @@
 {
   "LocaleLayout": {
     "title": "Irina Verbitskaya Studio | Interior Design",
-    "description": "Description",
+    "description": "I create interiors that restore harmony and promote health. Your spaces should inspire, relax, and help you find balance by combining style, comfort, and care for your well-being. My projects are not only aesthetically pleasing but also enhance the quality of life, filling your environment with harmony, comfort, and thoughtful design.",
     "meta": {
-      "ogTitle": "Irina Verbitskaya Studio — Design That Heals",
-      "ogDescription": "Creating interiors that help restore harmony and health.",
-      "ogImage": "https://example.com/path/to/image.jpg",
-      "ogAlt": "Example of an interior image"
+      "ogTitle": "Irina Verbitskaya | Design That Heals",
+      "ogDescription": "I create interiors that restore harmony and promote health. Your spaces should inspire, relax, and help you find balance by combining style, comfort, and care for your well-being. My projects are not only aesthetically pleasing but also enhance the quality of life, filling your environment with harmony, comfort, and thoughtful design.",
+      "ogImage": "https://verbitsky-design-server.vercel.app/images/icons/openG.jpg",
+      "ogAlt": "Image of a hall in a Miami House (Miami Project)"
     }
   },
   "NavBar": {
