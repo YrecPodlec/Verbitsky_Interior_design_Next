@@ -39,7 +39,7 @@
   "ModalWindows": {
     "ForAll": "Click to learn more ->",
 
-    "ModalIcon_1": "Services / Rates",
+    "ModalIcon_1": "Services / Products",
     "ModalTitle_1": "Services and Products",
 
     "ModalIcon_2": "Work Stages",
@@ -59,15 +59,16 @@
     "p1": "Interested in therapeutic design? Want to know how eco- and salutogenic design can transform your space and improve your well-being?",
     "p2": "Follow the link below and discover a world of articles that will answer all your questions and inspire change!",
     "p3": "Interested in therapeutic design? Want to know how eco- and salutogenic design can transform your space and improve your well-being?",
-    "suppliers": "Text",
-    "pSuppliers": "Text about suppliers"
+    "suppliers": "Large supplier base",
+    "pSuppliers": "I have a vast and constantly growing network of trusted partners from various industries: from exclusive suppliers of lighting, furniture, and finishing materials to proven construction teams. This allows me to find unique solutions for any style and budget, offering access to rare collections and innovative materials. Every detail is under control — from concept to completion."
   },
   "buttons": {
     "services": "RATES",
     "articles": "ARTICLES",
     "suppliers": "SUPPLIERS",
     "contacts": "CONTACTS",
-    "portfolio": "PORTFOLIO"
+    "portfolio": "PORTFOLIO",
+    "gallery": "MY PROJECTS"
   },
   "images": {
     "image_miami": "House in Miami, 3 floors for a family with a living room and luxurious studios",

@@ -1,6 +1,7 @@
 import React from 'react';
 import {ImageRel, SecondTitle, Title} from "@/app/[locale]/components/shared";
 import {useTranslations} from "next-intl";
+import {SliderDraft} from "@/app/[locale]/components/widgets";
 
 const styleImage = 'font-secondary responsive-80 text-center px-6 py-8 xxxs:py-4 xxxs:px-2'
 
@@ -19,7 +20,7 @@ const Text1 = () => {
 
 const WorkStepsBones = () => {
     const image = useTranslations('images');
-    const stylesSection = 'grid gap-4 py-4 border-b-2'
+    const stylesSection = 'grid gap-4 py-4 border-b-2 my-8'
     const styleContent = 'grid grid-cols-2 gap-8 xxxs:grid-cols-1'
     return (
         <section className={'mx-4'}>
@@ -43,6 +44,10 @@ const WorkStepsBones = () => {
                     </div>
                 </div>
             </section>
+
+            {/*примеры чертежей*/}
+            <SliderDraft/>
+
 
             <section className={`${stylesSection} justify-items-end`}>
                 <div className={'inline-block w-fit'}>

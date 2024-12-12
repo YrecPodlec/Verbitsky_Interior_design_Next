@@ -18,6 +18,8 @@ import LoadingBones from "@/app/[locale]/components/shared/ui/loading/loadingBon
 import PaginationBtnBones from "@/app/[locale]/components/shared/ui/button/paginationBtn/paginationBtnBones";
 import HoverTextProjectsBones from "@/app/[locale]/components/shared/ui/HoverText/HoverText";
 import HoverFirstBtnBones from "@/app/[locale]/components/shared/ui/HoverText/HoverFirstBtnsBones";
+import ModalHref from "@/app/[locale]/components/shared/ui/button/modalHref/modalHref";
+import PageHrefBtn from "@/app/[locale]/components/shared/ui/button/pageHrefBtn/pageHrefBtn";
 
 export {NavBarLogoBones as NavBarLogo};
 export {NavBarBtnBones as NavBarBtn}
@@ -39,3 +41,5 @@ export {LoadingBones as Loading}
 export {PaginationBtnBones as PaginationBtn}
 export {HoverTextProjectsBones as HoverTextProjects}
 export {HoverFirstBtnBones as HoverFirstBtn}
+export {ModalHref as ModalHref}
+export {PageHrefBtn as PageHrefBtn}

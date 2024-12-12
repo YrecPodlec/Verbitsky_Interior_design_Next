@@ -32,7 +32,7 @@ const MainScreen_bones = () => {
                         {/*text*/}
                         {t("MainTextBlock")}
                     </p>
-                    <PageBtn href={'#contacts'} text={t('Btn')}/>
+                    <PageBtn href={'#contactsMain'} text={t('Btn')}/>
                 </div>
             </div>
             <div className={'flex cursor-default -z-10'}>
@@ -44,7 +44,7 @@ const MainScreen_bones = () => {
                     <AddressText/>
                 </div>
                 <div className={'w-2/4'}>
-                    <PageBtn text={b('portfolio')} href={'#portfolio'}/>
+                    <PageBtn text={b('gallery')} href={'#gallery'}/>
                 </div>
             </div>
         </section>

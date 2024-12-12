@@ -35,7 +35,7 @@ const Gallery_Projects = () => {
     return (
         <section className={'grid gap-8'}>
             <div className={'border-b-4 text-center'}>
-                <h1 className={'responsive-64 font-secondaryf'}>
+                <h1 className={'responsive-64 font-secondary'}>
                     {t('title')}
                 </h1>
                 <p className={'responsive-32'}>

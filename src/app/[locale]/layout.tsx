@@ -53,7 +53,7 @@ export default async function RootLayout({ children, params: { locale } }: Props
 
     return (
         <html lang={locale}>
-        <body className="font-primary tracking-widest">
+        <body className="font-primary tracking-widest scroll-smooth">
         <NextIntlClientProvider messages={messages} locale={locale}>
             <NavBar />
             <LanguageModal/>

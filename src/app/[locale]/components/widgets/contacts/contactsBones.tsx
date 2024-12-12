@@ -50,14 +50,14 @@ const ContactsBones = () => {
                             </a>
                         </div>
                         <div>
-                            <p className={'text-center'}>
-                                {t('form')}
-                            </p>
+                            {/*<p className={'text-center'}>*/}
+                            {/*    {t('form')}*/}
+                            {/*</p>*/}
                         </div>
                     </div>
                 </div>
                 <div className={'justify-center text-center items-center'}>
-                    тут форма
+
                 </div>
             </article>
         </section>

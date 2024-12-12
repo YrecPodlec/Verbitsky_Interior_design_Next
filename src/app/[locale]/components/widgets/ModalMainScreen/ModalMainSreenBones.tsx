@@ -2,7 +2,7 @@ import React from 'react';
 import {HoverFirstBtn, ImageRel} from "@/app/[locale]/components/shared";
 import {ModalComponent} from "@/app/[locale]/components/features";
 import {useTranslations} from "next-intl";
-import {Advantages, Benefit, PriceProducts, WorkSteps} from "@/app/[locale]/components/widgets";
+import {PriceProducts} from "@/app/[locale]/components/widgets";
 
 const ModalMainScreenBones = () => {
     const t = useTranslations('ModalWindows')
@@ -16,23 +16,23 @@ const ModalMainScreenBones = () => {
             title: 'ModalIcon_1'
         },
         // ЭТАПЫ РАБОТЫ
-        {
-            childrenBtn: <ImageRel ImageObject={'https://verbitsky-design-server.vercel.app/images/los-angeles/2-la.webp'} text={''} alt={images('image_losAngeles')} />,
-            children: <WorkSteps/>,
-            title: 'ModalIcon_2'
-        },
-        // ПРЕИМУЩЕСТВА
-        {
-            childrenBtn: <ImageRel ImageObject={'https://verbitsky-design-server.vercel.app/images/miami-studio/1-studio-miami.webp'} text={''} alt={images('image_miamiStudio')} />,
-            children: <Advantages/>,
-            title: 'ModalIcon_3'
-        },
-        // Ваша выгода
-        {
-            childrenBtn: <ImageRel ImageObject={'https://verbitsky-design-server.vercel.app/images/magellan-street/6.webp'} text={''} alt={images('image_magellan')} />,
-            children: <Benefit/>,
-            title: 'ModalIcon_4'
-        }
+        // {
+        //     childrenBtn: <ImageRel ImageObject={'https://verbitsky-design-server.vercel.app/images/los-angeles/2-la.webp'} text={''} alt={images('image_losAngeles')} />,
+        //     children: <WorkSteps/>,
+        //     title: 'ModalIcon_2'
+        // },
+        // // ПРЕИМУЩЕСТВА
+        // {
+        //     childrenBtn: <ImageRel ImageObject={'https://verbitsky-design-server.vercel.app/images/miami-studio/1-studio-miami.webp'} text={''} alt={images('image_miamiStudio')} />,
+        //     children: <Advantages/>,
+        //     title: 'ModalIcon_3'
+        // },
+        // // Ваша выгода
+        // {
+        //     childrenBtn: <ImageRel ImageObject={'https://verbitsky-design-server.vercel.app/images/magellan-street/6.webp'} text={''} alt={images('image_magellan')} />,
+        //     children: <Benefit/>,
+        //     title: 'ModalIcon_4'
+        // }
 
     ]
     return (

@@ -1,10 +1,11 @@
 import React from 'react';
-import {LanguageModal} from "@/app/[locale]/components/widgets";
+import {LanguageModal, SliderDraft} from "@/app/[locale]/components/widgets";
 
 const Page = () => {
     return (
-        <div>
+        <div className={'py-8'}>
             <LanguageModal/>
+            <SliderDraft/>
         </div>
     );
 };

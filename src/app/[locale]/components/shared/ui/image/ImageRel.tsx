@@ -11,7 +11,7 @@ const ImageRelBones: React.FC<Props> = ({ ImageObject, text, alt }) => {
     return (
         <div className={'relative w-full h-full'}>
             <Image
-                src={ImageObject}
+                src={ImageObject || ''}
                 alt={alt}
                 fill={true}
                 style={{ objectFit: "cover" }}

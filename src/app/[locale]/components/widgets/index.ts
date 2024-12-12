@@ -9,6 +9,7 @@ import ContactsBones from "@/app/[locale]/components/widgets/contacts/contactsBo
 import Footer from "@/app/[locale]/components/widgets/footer/footer";
 import LanguageModal from "@/app/[locale]/components/widgets/language/languageModal";
 import Menu from "@/app/[locale]/components/widgets/menu/menu";
+import SliderDraft from "@/app/[locale]/components/widgets/sliderDraft/sliderDraft";
 
 export {MainScreen_bones as MainScreen}
 export {PriceProductsBones as PriceProducts}
@@ -21,3 +22,4 @@ export {ContactsBones as Contacts}
 export {Footer as Footer}
 export {LanguageModal as LanguageModal}
 export {Menu as Menu}
+export {SliderDraft as SliderDraft}

@@ -7,8 +7,10 @@ const HomePage = () => {
         <section className={'mt-12 flex flex-col gap-32 xxs:gap-16'}>
             <MainScreen/>
             <ModalMainScreen/>
-            <GalleryProjects />
-            <div id='#contacts'>
+            <div id={'gallery'}>
+                <GalleryProjects />
+            </div>
+            <div id={'contactsMain'}>
                 <Contacts/>
             </div>
         </section>

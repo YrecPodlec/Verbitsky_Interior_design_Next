@@ -18,7 +18,7 @@ const PriceCardFetchBones = () => {
     const { data, isLoading, isError } = usePrice(locale);
 
     if (isError) {
-        return <p>{isError}</p>;
+        return <p>There are no items :(</p>;
     }
     if (isLoading) {
         return (

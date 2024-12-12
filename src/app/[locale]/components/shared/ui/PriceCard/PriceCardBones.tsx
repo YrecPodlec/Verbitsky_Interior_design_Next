@@ -1,5 +1,5 @@
 import React from 'react';
-import {PageBtn} from "@/app/[locale]/components/shared";
+import {ModalHref} from "@/app/[locale]/components/shared";
 import {useTranslations} from "next-intl";
 
 interface PriceCardMaket {
@@ -10,7 +10,7 @@ interface PriceCardMaket {
     tags: string[];
 }
 
-const PriceCardBones: React.FC<PriceCardMaket> = ({title, services, price}) => {
+const PriceCardBones: React.FC<PriceCardMaket> = ({title, services}) => {
     const [active, setActive] = React.useState(false);
     const tCard = useTranslations('priceCard')
     return (
@@ -22,13 +22,13 @@ const PriceCardBones: React.FC<PriceCardMaket> = ({title, services, price}) => {
                 </h1>
             </div>
             <div className={'border-y-2'}>
-                <p className={'responsive-32 text-center'}>
-                    {tCard('costBy')}
-                </p>
-                <p className={'font-secondary responsive-48 w-full text-center'}>{price}</p>
+                {/*<p className={'responsive-32 text-center'}>*/}
+                {/*    {tCard('costBy')}*/}
+                {/*</p>*/}
+                {/*<p className={'font-secondary responsive-48 w-full text-center'}>{price}</p>*/}
             </div>
             <div className={'py-2 mx-auto my-0'}>
-                <PageBtn href={'#contacts'} text={tCard('callMe')}/>
+                <ModalHref href={'#contacts'} text={tCard('callMe')}/>
             </div>
         </div>
         <div className={'flex-col flex bg-GreenLight bg-opacity-15 p-2'}>
