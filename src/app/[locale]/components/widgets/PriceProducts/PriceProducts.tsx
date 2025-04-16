@@ -15,7 +15,7 @@ const PriceProductsBones = () => {
             <header className="flex justify-center">
                 <Title Title={t('ModalTitle_1')}/>
             </header>
-            <section className="grid grid-cols-2 responsive-32">
+            <section className="grid grid-cols-2 responsive-32 xs:grid-cols-1">
                 <article className="flex flex-col gap-8 xxxs:gap-2">
                     <h2 className="text-center">{t('ServicesTitle')}</h2>
                     <article>
@@ -38,26 +38,12 @@ const PriceProductsBones = () => {
                             <PageHrefBtn href="/articles" text={tb('articles')}/>
                         </button>
                     </article>
-                    <div
-                        className="relative w-[95%] rounded-main xxxs:rounded-mobile h-[30vh] xxxs:h-[16vh] overflow-hidden my-0 mx-auto">
-                        <ImageRel ImageObject="https://verbitsky-design-server.vercel.app/images/dubai/12-dubai.webp"
-                                  alt={image('image_dubai')} text=""/>
-                    </div>
                 </article>
-                <article className="text-right">
-                    <div
-                        className="relative w-[95%] rounded-main xxxs:rounded-mobile h-[30vh] xxxs:h-[16vh] overflow-hidden my-0 mx-auto">
-                        <ImageRel ImageObject="https://verbitsky-design-server.vercel.app/images/dubai/13-dubai.webp"
-                                  alt={image('image_dubai')} text=""/>
-                    </div>
-                    <h1 className={'responsive-48 text-center font-secondary'}>{t('suppliers')}</h1>
-                    <article className="py-4 flex flex-col gap-4 border-y-2">
-                        <p>{t('pSuppliers')}</p>
-                        <button className="w-full justify-center flex">
-                            <PageHrefBtn text={tb('suppliers')} href="/suppliers"/>
-                        </button>
-                    </article>
-                </article>
+                <div
+                    className="rounded-main xxxs:rounded-mobile w-full h-full overflow-hidden xs:h-[128px]">
+                    <ImageRel ImageObject="https://verbitsky-design-server.vercel.app/images/dubai/12-dubai.webp"
+                              alt={image('image_dubai')} text=""/>
+                </div>
             </section>
             <section id="services">
                 <PriceCardFeach/>

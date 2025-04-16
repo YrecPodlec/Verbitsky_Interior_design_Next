@@ -15,24 +15,6 @@ const ModalMainScreenBones = () => {
             children: <PriceProducts />,
             title: 'ModalIcon_1'
         },
-        // ЭТАПЫ РАБОТЫ
-        // {
-        //     childrenBtn: <ImageRel ImageObject={'https://verbitsky-design-server.vercel.app/images/los-angeles/2-la.webp'} text={''} alt={images('image_losAngeles')} />,
-        //     children: <WorkSteps/>,
-        //     title: 'ModalIcon_2'
-        // },
-        // // ПРЕИМУЩЕСТВА
-        // {
-        //     childrenBtn: <ImageRel ImageObject={'https://verbitsky-design-server.vercel.app/images/miami-studio/1-studio-miami.webp'} text={''} alt={images('image_miamiStudio')} />,
-        //     children: <Advantages/>,
-        //     title: 'ModalIcon_3'
-        // },
-        // // Ваша выгода
-        // {
-        //     childrenBtn: <ImageRel ImageObject={'https://verbitsky-design-server.vercel.app/images/magellan-street/6.webp'} text={''} alt={images('image_magellan')} />,
-        //     children: <Benefit/>,
-        //     title: 'ModalIcon_4'
-        // }
 
     ]
     return (
