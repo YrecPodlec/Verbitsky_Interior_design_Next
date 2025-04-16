@@ -3,7 +3,7 @@ import {Supplier} from "@/app/[locale]/components/entities";
 const data = [
     {
         logo: '/suppliers/zefire/zefire.png',
-        image: '/1-moscow-resident.webp',
+        image: '/suppliers/zefire/image.jpg',
         table: [
             {
                 Фото: '/suppliers/zefire/1.png',
